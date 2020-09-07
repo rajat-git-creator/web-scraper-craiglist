@@ -26,7 +26,7 @@ SECRET_KEY = 'upq_e)hv%w&3v(p_8!-#k)362968k6v(^3h+3+4%u_h^_71-7#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rajatgitcreator.pythonanywhere.com',]
 
 
 # Application definition
