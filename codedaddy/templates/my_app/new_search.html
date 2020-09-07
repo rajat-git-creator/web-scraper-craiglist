@@ -1,0 +1,29 @@
+{% extends 'base.html'%} {% block content%}
+<h2 style="text-align-last: center">{{ search | title}}</h2>
+{% for post in final_posting %}
+<div class="row">
+  <div class="col l4">
+    <div class="card">
+      <div class="card-image">
+        <img
+          src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg"
+        />
+        <span class="card-title">{{post.0}}</span>
+        <a
+          class="btn-floating halfway-fab waves-effect waves-light red"
+          href="{{post.1}}"
+          ><i class="material-icons">add</i></a
+        >
+      </div>
+      <div class="card-content">
+        <p>
+          I am a very simple card. I am good at containing small bits of
+          information. I am convenient because I require little markup to use
+          effectively.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {%endfor%} {% endblock content%}
+</div>
